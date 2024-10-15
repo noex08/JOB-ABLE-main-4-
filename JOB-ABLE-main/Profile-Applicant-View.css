@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e1b502;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+section.applicant-section {
+    display: flex;
+    justify-content: space-between; /* Ensures content and sidebar are spaced */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px; /* Optional max width */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    width: 250%; /* Ensures the profile and sidebar fill the available width */
+}
+
+.left-column {
+    width: 75%; /* Adjust width to fit most of the space */
+}
+
+.sidebar {
+    width: 23%; /* Sidebar is on the right with some spacing */
+    padding: 40px;
+    background-color: rgb(255, 250, 250);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 190px;
+    float: right;
+}
+
+.profile-header {
+    background-color: #eaebeb;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 29px;
+    width: 133%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.button-container {
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 50px; 
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #e04b3d;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.applicant-details {
+    margin-left: 20px;
+}
+
+
+.applicant-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.age-gender {
+    font-size: 16px;
+    color: gray;
+}
+
+.applicant-details p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* Allows absolute positioning of buttons */
+}
+
+.button-container {
+    position: absolute;
+    right: 20px; /* Positioning both buttons towards the right side */
+    top: 10px;  /* Align them near the top */
+    display: flex;
+    gap: 10px;
+}
+.edit-profile-bttn,
+.logout-bttn {
+    background-color: #4261dc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+.logout-bttn {
+    background-color: #b8b7b6;
+}
+
+.recently-applied {
+    background-color: rgb(255, 255, 255);
+    padding: 52px;
+    border-radius: 10px;
+}
+
+.recently-applied h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.job-posting {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #4261dc;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-info h4, .personal-documents h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-info p, .personal-documents p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: gray;
+}
+
+.personal-documents a {
+    text-decoration: none;
+    color: #4261dc;
+}
